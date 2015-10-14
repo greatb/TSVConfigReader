@@ -1,0 +1,1 @@
+c:\users\balatha\documents\visual studio 2015\Projects\TSVConfigReader\bin\Debug\TSVConfigReader.exe.config
