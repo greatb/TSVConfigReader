@@ -1,1 +1,6 @@
 c:\users\balatha\documents\visual studio 2015\Projects\TSVConfigReader\bin\Debug\TSVConfigReader.exe.config
+C:\Users\balatha\documents\visual studio 2015\Projects\TSVConfigReader\bin\Debug\TSVConfigReader.exe
+C:\Users\balatha\documents\visual studio 2015\Projects\TSVConfigReader\bin\Debug\TSVConfigReader.pdb
+C:\Users\balatha\documents\visual studio 2015\Projects\TSVConfigReader\obj\Debug\TSVConfigReader.csprojResolveAssemblyReference.cache
+C:\Users\balatha\documents\visual studio 2015\Projects\TSVConfigReader\obj\Debug\TSVConfigReader.exe
+C:\Users\balatha\documents\visual studio 2015\Projects\TSVConfigReader\obj\Debug\TSVConfigReader.pdb
