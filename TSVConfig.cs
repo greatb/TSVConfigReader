@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Runtime.Caching;
@@ -10,7 +11,7 @@ namespace TSVConfigReader
     {
         private const string CACHE_KEY = "textConfigs";
 
-        private static AppEnvironment appEnv;
+        private static AppEnvironment appEnv = (AppEnvironment)System.Enum.Parse(typeof(AppEnvironment), ConfigurationManager.AppSettings["AppEnvironment"]);
 
         private static string fileName = @"c:\temp\TextFile1.txt";
 
