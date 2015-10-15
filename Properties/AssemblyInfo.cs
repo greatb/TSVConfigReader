@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TSVConfigReader")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyDescription("Tab Seperated Value Config Reader")]
+[assembly: AssemblyConfiguration("Booolean")]
+[assembly: AssemblyCompany("Booolean")]
 [assembly: AssemblyProduct("TSVConfigReader")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
