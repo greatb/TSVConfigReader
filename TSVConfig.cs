@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Caching;
 using TSVConfigReader.Core;
 
 namespace TSVConfigReader
@@ -17,17 +18,31 @@ namespace TSVConfigReader
         {
             string output = string.Empty;
 
-            Dictionary<string, string> textConfigs;
+            ObjectCache cache = MemoryCache.Default;
+            Dictionary<string, string> textConfigs = cache[CACHE_KEY] as Dictionary<string, string>;
 
-            textConfigs = File
+            if (textConfigs == null)
+            {
+                CacheItemPolicy policy = new CacheItemPolicy();
+
+                List<string> filePaths = new List<string>();
+                filePaths.Add(fileName);
+
+                policy.ChangeMonitors.Add(new HostFileChangeMonitor(filePaths));
+
+                textConfigs = File
                 .ReadAllLines(fileName)
                 .Select(x => x.Split('\t'))
                 .Where(x => x.Length > 1)
                 .ToDictionary(x => x[0].Trim(), x => x[(int)appEnv]);
 
+                cache.Set(CACHE_KEY, textConfigs, policy);
+            }
 
             output = textConfigs[key];
+
             return output;
+
         }
     }
 }
