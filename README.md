@@ -1,6 +1,7 @@
 # TSVConfigReader
-
 ## Tab Separated Value Config Reader
+
+THIS CODE IS A FUNCTIONAL CLASS IMPLEMENTATION ONLY
 
 ### Introduction
 By default the creators of ASP.Net wanted you to use XML files to save application configuration. And MS Build and Visual Studio also supports for transforming the files into any required app environments.
