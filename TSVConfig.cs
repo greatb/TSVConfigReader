@@ -9,7 +9,7 @@ namespace TSVConfigReader
 {
     public static class TSVConfig
     {
-        private const string CACHE_KEY_TEST = "textConfigs";
+        private const string CACHE_KEY = "textConfigs";
 
         private static AppEnvironment appEnv = (AppEnvironment)System.Enum.Parse(typeof(AppEnvironment), ConfigurationManager.AppSettings["AppEnvironment"]);
 
